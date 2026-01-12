@@ -14,6 +14,8 @@ ValidateFlow provides three strategies for processing stream data:
 
 # Download
 
+[![](https://jitpack.io/v/ThymomenosGata/ValidateFlow.svg)](https://jitpack.io/#ThymomenosGata/ValidateFlow)
+
 Add it in your settings.gradle.kts at the end of repositories:
 ```kotlin
 dependencyResolutionManagement {
@@ -29,7 +31,7 @@ Add the dependency in your build.gradle.kts:
 
 ```kotlin
 dependencies {
-    implementation("com.github.ThymomenosGata:ValidateFlow:Tag")
+    implementation("com.github.ThymomenosGata:ValidateFlow:0.0.1")
 }
 ```
 
