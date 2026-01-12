@@ -12,6 +12,29 @@ ValidateFlow provides three strategies for processing stream data:
 
 <hr>
 
+# Download
+
+Add it in your settings.gradle.kts at the end of repositories:
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+Add the dependency in your build.gradle.kts:
+
+```kotlin
+dependencies {
+    implementation("com.github.ThymomenosGata:ValidateFlow:Tag")
+}
+```
+
+<hr>
+
 # Quick Start
 
 1. <b>UI/UX: Processing the latest item</b>
