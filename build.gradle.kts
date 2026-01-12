@@ -1,9 +1,22 @@
 plugins {
     kotlin("jvm") version "2.2.20"
+    `maven-publish`
 }
 
 group = "org.wordy.validate.flow"
-version = "1.0-SNAPSHOT"
+version = "0.0.1"
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.ThymomenosGata"
+            artifactId = "validateflow"
+            version = "0.0.1"
+
+            from(components["java"])
+        }
+    }
+}
 
 repositories {
     mavenCentral()
